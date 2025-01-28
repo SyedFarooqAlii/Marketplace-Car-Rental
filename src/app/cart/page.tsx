@@ -3,8 +3,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 
 type CarItem = {
   _id: string;

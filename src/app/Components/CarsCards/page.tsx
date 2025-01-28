@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import React, { useEffect } from "react";
 
 const Cards = () => {
@@ -42,7 +43,7 @@ const Cards = () => {
           </div>
           <div className="flex items-center justify-center">
             <div className="flex w-[90%] sm:h-[200px] lg:w-[406px] h-[116px] absolute bottom-3 ml-0 sm:ml-0 lg:ml-20 items-center justify-center">
-              <img
+              <Image
                 className="object-contain"
                 src="https://s3-alpha-sig.figma.com/img/2385/cc01/da9bb791587b8022c475d39822c50c17?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Od1UBAJf7E5O46664edEbxigGSpM3-JsBv04704PcK-9d~RrvEs6ppQdIFAuV5SO7DK4KdIOedl7rLfh~ZdB8p2H010WWUIxpXiNh9sQzC8FF~k9lq2soe-51CJOCWNOQ9uBXLpaV2LlgrPiSwu1sOYI0xh~8DBSlQU2flfi~ymjFBtsgzmBfOZ~JLvE2WnajtJi5we3G6HDB9TGun3wd~4ItGLCzi-d13QfTCKEnDG8TSJFZPpuhqdW7969joySadH-urF54-xyCZb73147LVY6vp7yqYicDPozXo-d2EmYfXV9MsNGO99O7z6K3K9ay3ZXZ4wiPTFv3OpE5E4otw__"
                 alt=""
@@ -67,7 +68,7 @@ const Cards = () => {
           </div>
           <div className="flex items-center justify-center">
             <div className="flex w-[90%] ml-0 sm:ml-0 lg:ml-24 lg:w-[406px] sm:h-[200px] h-[116px] absolute bottom-5 items-center justify-center">
-              <img
+              <Image
                 className="object-cover"
                 src="https://s3-alpha-sig.figma.com/img/702f/356e/48fe531e6fd2626c5d1041dbfcde3341?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pqchb2LXG1CzJVi8REocxTFmgsniQaQk94twikFDvW6t8unY0uN2iDgogKE7OynrmQcTaYNIAx5gzKNwVosBBUk67rgYzDQoM~MF6xD~Q4FdJCThW4M9Jx5ivd8zn4ZhbCj1htJh0idZ4nfAHEhovLfAheB7Pzse-8b4sPa3zWL8gnyyGjO7I9oi438zN0Uowsd4br~oZbWBc~d6b94I0IrcmL3OABEejvj1qBBnPvFqVYMuYmR7XEEfzN~EiPGCbSgAvJQJKT8YUrjxu-Ac5KIA5ELqg7y44XdIxm2sy2j~xK35INzWCwGjLIfRoGy3hyxBMeyOALaz0FypwC6N2A__"
                 alt=""

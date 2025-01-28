@@ -8,7 +8,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
         <div>
             <img
-              src="/3d-car-with-simple-background.jpg"
+              src="/3d.jpg"
               alt="Car Rental Service"
               className="rounded-lg shadow-lg"
             />

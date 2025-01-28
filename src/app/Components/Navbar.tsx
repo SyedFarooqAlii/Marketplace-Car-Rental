@@ -59,7 +59,7 @@ const Navbar = () => {
           </div>
           <img
             className="w-8 h-8 rounded-full object-cover"
-            src="https://s3-alpha-sig.figma.com/img/f1f5/6cb5/7c6c5d88e94501a481b5f732536c2851?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=o3Rx4DP6Md4sfr-geOWzMiecpDr8oAJmmU0QmRfMLXDsq96B1p63oz2cxB6EvRfD-LW~ZVFrdINPIYEkw9x6dmyiWPOtnqcBBXXQ9u-Us8kkEzSB8h6NDv3h6yx5x2mfK0ffo8dnInf6DhZHaWXWLmILwA-6nML-~vORnwd-SFozgREuIehrAFSehXaKlyXccIytONXDxKy1S1Udb5NRJQLzATAyysfsTMxSC-fk7qM1LGlPo5SDqjqTsPSZ87nCeUKrHLqvr4DSdI~1p504Fyf9KlZqrMNBgKGMU78qAmNrfSU6lEgXHEetJFIWVCW4XXPGoZQT1k9fxQ2sKc2MlQ__"
+            src="/unsplash.png"
             alt="User"
           />
         </div>

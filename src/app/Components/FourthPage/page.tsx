@@ -81,7 +81,7 @@ const FourthPage = () => {
         <label className="block">
           <input type="radio" name="payment" className="mr-2" /> Credit Card
         </label>
-        <Image className="w-[92px] h-[20px] object-cover" src="/visa.jpg" alt="Visa" />
+        <Image className="w-[92px] h-[20px] object-cover" src="/visa.jpg" width={92} height={20} alt="Visa" />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <input
@@ -109,13 +109,13 @@ const FourthPage = () => {
         <label className="block">
           <input type="radio" name="payment" className="mr-2" /> PayPal
         </label>
-        <Image className="w-[92px] h-[20px] object-cover" src="/paypal.jpg" alt="PayPal" />
+        <Image className="w-[92px] h-[20px] object-cover" src="/paypal.jpg" width={92} height={20} alt="PayPal" />
       </div>
       <div className="flex flex-wrap justify-between items-center">
         <label className="block">
           <input type="radio" name="payment" className="mr-2" /> Bitcoin
         </label>
-        <Image className="w-[92px] h-[20px] object-cover" src="/btc.jpg" alt="Bitcoin" />
+        <Image className="w-[92px] h-[20px] object-cover" src="/btc.jpg" width={92} height={20} alt="Bitcoin" />
       </div>
     </div>
   </div>
@@ -143,7 +143,7 @@ const FourthPage = () => {
   </div>
 
   <div className="mt-6">
-    <Image className="h-[32px] w-[32px] object-cover" src="/protect.jpg" alt="" />
+    <Image className="h-[32px] w-[32px] object-cover" src="/protect.jpg" width={92} height={20} alt="" />
     <h2 className="text-lg font-semibold mt-4 mb-4">Confirmation</h2>
     <div className="flex flex-wrap justify-between mb-4">
       <p className="text-[#90A3BF] text-[14px] font-[500]">Please enter your payment method</p>

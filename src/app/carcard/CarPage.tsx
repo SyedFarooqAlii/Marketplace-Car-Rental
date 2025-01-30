@@ -40,10 +40,10 @@ export default function CarPage() {
   };
 
   return (
-    <div className="max-w-screen-xl bg-gradient-to-br from-gray-100 to-gray-50 overflow-hidden mx-auto px-[19px] lg:px-20 py-12 text-white">
+    <div className="max-w-screen-xl  bg-[#F6F7F9] overflow-hidden mx-auto px-[19px] lg:px-20 py-12 text-white">
       {/* Heading animation */}
-      <h1 className="text-4xl font-[800] text-left mb-6 tracking-wide text-blue-500 animation-slide-top">
-        <span className="text-gray-900">Our</span> Cars
+      <h1 className="text-4xl font-[800] text-left mb-6 tracking-wide text-[#3563E9] animation-slide-top">
+        <span className="text-[#1A202C]">Our</span> Cars
       </h1>
 
       {/* Filter Navbar */}
@@ -52,7 +52,7 @@ export default function CarPage() {
           <button
             onClick={() => applyFilter("All")}
             className={`px-4 py-2 rounded-lg transition-all duration-500 ease-in-out ${
-              activeFilter === "All" ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-800"
+              activeFilter === "All" ? "bg-blue-600 text-white" : "bg-gray-200 text-[#1A202C]"
             }`}
           >
             All
@@ -80,7 +80,7 @@ export default function CarPage() {
           <div className="flex items-center justify-center text-white">
             <button
               onClick={() => handleArrowClick("left")}
-              className="bg-blue-600 px-3 py-2 rounded-full transition-transform transform hover:scale-110"
+              className="bg-[#3563E9] px-3 py-2 rounded-full transition-transform transform hover:scale-110"
             >
               ←
             </button>
@@ -88,7 +88,7 @@ export default function CarPage() {
           <div className="flex items-center justify-center text-white">
             <button
               onClick={() => handleArrowClick("right")}
-              className="bg-blue-600 px-3 py-2 rounded-full transition-transform transform hover:scale-110"
+              className="bg-[#F6F7F9] px-3 py-2 rounded-full transition-transform transform hover:scale-110"
             >
               →
             </button>
@@ -112,7 +112,7 @@ export default function CarPage() {
               key={`${item._id}-${currentIndex}`} // Ensure animation triggers for each change
               className={`
                  sm:w-[280px] md:w-[304px] lg:w-[285px] max-w-xs  lg:h-[370px]
-flex flex-col w-[300px] rounded-[10px] pb-4 overflow-hidden border border-gray-100 bg-white shadow-md ${animationClass} transition-all duration-500 ease-in-out`}
+flex flex-col w-[300px] rounded-[10px] pb-4 overflow-hidden border border-gray-100 bg-[#ffffff] shadow-md ${animationClass} transition-all duration-500 ease-in-out`}
             >
               {/* Header */}
               <div className="h-[48px] w-full flex items-center justify-center">
@@ -121,7 +121,7 @@ flex flex-col w-[300px] rounded-[10px] pb-4 overflow-hidden border border-gray-1
                     <p className="lg:text-[16px] text-[16px] md:text-[16px] font-[700] text-[#1A202C]">
                       {item.name}
                     </p>
-                    <p className="lg:text-[10px] text-[14px] md:text-[14px] font-[700] text-[#90A3BF] tracking-[-.2%]">
+                    <p className="lg:text-[14px] text-[14px] md:text-[14px] font-[700] text-[#90A3BF] tracking-[-.2%]">
                       {item.type}
                     </p>
                   </div>
@@ -154,7 +154,7 @@ flex flex-col w-[300px] rounded-[10px] pb-4 overflow-hidden border border-gray-1
                 <div className="flex  justify-between w-[256px] h-[24px]">
                   <div className="flex items-center gap-2">
                     <i className="fa-solid fa-gas-pump text-[14px] sm:text-[16px] text-[#90A3BF]"></i>
-                    <p className="lg:text-[12px] text-[#90A3BF]  text-[14px]">{item.fuelCapacity}</p>
+                    <p className="lg:text-[14px] text-[#90A3BF]  text-[14px]">{item.fuelCapacity}</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <img
@@ -162,7 +162,7 @@ flex flex-col w-[300px] rounded-[10px] pb-4 overflow-hidden border border-gray-1
                       src="/wheel.jpg"
                       alt=""
                     />
-                    <p className="lg:text-[12px] text-[#90A3BF] text-[14px]">{item.transmission}</p>
+                    <p className="lg:text-[14px] text-[#90A3BF] text-[14px]">{item.transmission}</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <img
@@ -170,7 +170,7 @@ flex flex-col w-[300px] rounded-[10px] pb-4 overflow-hidden border border-gray-1
                       src="/profile.jpg"
                       alt=""
                     />
-                    <p className="lg:text-[12px] text-[#90A3BF] text-[14px]">{item.seatingCapacity}</p>
+                    <p className="lg:text-[14px] text-[#90A3BF] text-[14px]">{item.seatingCapacity}</p>
                   </div>
                 </div>
               </div>
@@ -181,7 +181,7 @@ flex flex-col w-[300px] rounded-[10px] pb-4 overflow-hidden border border-gray-1
                     <h5 className="lg:text-[16px] text-[16px] md:text-[18px] font-[700] text-gray-900">
                       {item.pricePerDay}
                     </h5>
-                    <p className="lg:text-[10px] text-[12px] md:text-[14px] font-[700] text-[#90A3BF]">
+                    <p className="lg:text-[14px] text-[12px] md:text-[14px] font-[700] text-[#90A3BF]">
                       {item.originalPrice}
                     </p>
                   </a>

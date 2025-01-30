@@ -1,8 +1,10 @@
 "use client"
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Cards = () => {
+  const [divsSwapped, setDivsSwapped] = useState(false);
+
   useEffect(() => {
     // Scroll animation logic
     const handleScroll = () => {
@@ -23,9 +25,9 @@ const Cards = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  // 
   return (
-    <div>
+    <div className=" bg-black dark:bg-[#F6F7F9]">
       <div className="flex w-full flex-col lg:flex-row items-center justify-center gap-6 mt-12 animate-on-scroll">
         {/* First Section */}
         <div className="h-[360px] rounded-[10px] relative bg-[#54A6FF] w-[100%] lg:w-[600px]">
@@ -83,70 +85,78 @@ const Cards = () => {
       </div>
 
       {/* Form Section */}
-      <div className="flex flex-col lg:flex-row items-center mt-10 justify-between animate-on-scroll">
+      <div className="flex flex-col px-1 pb-6 lg:px-5 lg:flex-row items-center mt-10 justify-between animate-on-scroll">
         {/* Pick-Up Section */}
-        <div className="w-full lg:w-auto bg-white rounded-[10px]">
+        <div
+          className={`w-full lg:w-auto bg-[#FFFFFF] rounded-[10px] ${divsSwapped ? "order-2" : ""}`}
+        >
           <div className="flex gap-4 pl-4 lg:pl-12 w-full lg:w-[522px] h-[56px] items-center">
             <div className="w-[14px] h-[14px] rounded-full bg-[#3563E9] border-[#AEC8FC] border-[2px]"></div>
-            <p className="text-[16px] font-semibold">Pick - Up</p>
+            <p className="text-[16px] text-[#1A202C] font-semibold">Pick - Up</p>
           </div>
           <div className="flex flex-wrap gap-4 lg:gap-12 pb-4 pl-4 lg:pl-12">
-          <div className=''>
-        
-        <p className='font-bold text-[16px]'>Location</p>
-        <div className='flex justify-between items-center gap-12'>
-        <div className='flex'>
-          <p className='text-[#90A3BF]  lg:mt-0 text-[12px] mt-2'>Select Your City</p>
-          <select name="Select Your City" className='bg-white' id=""></select>
-        </div>
-        <div className='flex'>
-          <p className='text-[#90A3BF]  lg:mt-0 text-[12px] mt-2'>Select Your City</p>
-          <select name="Select Your City" className='bg-white' id=""></select>
-        </div>
-        <div className='flex'>
-          <p className='text-[#90A3BF]  lg:mt-0 text-[12px] mt-2'>Select Your City</p>
-          <select name="Select Your City" className='bg-white' id=""></select>
-        </div>
-        </div>
-        </div>
-        </div>
-          
+            <div>
+              <p className="font-bold text-[#1A202C] text-[16px]">Location</p>
+              <div className="flex justify-between items-center gap-6 lg:gap-16">
+              <div className="flex">
+                  <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px] text-[10px] mt-2">Select Your Country</p>
+                  <select name="Select Your Country" className="bg-[#FFFFFF] text-[12px]">
+                    <option value="">Pakistan</option>
+                    <option value="">Iran</option>
+                  </select>
+                </div>
+                <div className="flex">
+                  <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px] text-[10px] mt-2">Select Your City</p>
+                  <select name="Select Your City" className="bg-[#FFFFFF] text-[12px]">
+                    <option value="">Lahore</option>
+                    <option value="">Karachi</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Arrow */}
-        <div className="h-[136px] flex items-center">
-          <div className="h-[60px] w-[60px] flex items-center justify-center gap-1 text-white rounded-[4px] bg-[#3563E9]">
+        <div className="h-[136px] flex items-center justify-center">
+          <div
+            onClick={() => setDivsSwapped(!divsSwapped)} // This will toggle swapping divs
+            className="h-[60px] w-[60px] flex items-center justify-center gap-1 text-white rounded-[4px] bg-[#3563E9] cursor-pointer"
+          >
+            {/* Up and Down arrows */}
             <i className="text-[18px] fa-solid fa-arrow-up"></i>
             <i className="text-[18px] rotate-[90deg] fa-solid fa-arrow-right"></i>
           </div>
         </div>
 
         {/* Drop-Off Section */}
-        <div className="w-full lg:w-auto bg-white rounded-[10px]">
-          <div className="flex gap-4 pl-4 lg:pl-12 w-full lg:w-[522px] h-[56px] items-center">
+        <div
+          className={`w-full lg:w-auto bg-[#FFFFFF] rounded-[10px] ${divsSwapped ? "order-1" : ""}`}
+        >
+          <div className="flex gap-4 pl-2 lg:pl-12 w-full lg:w-[522px] h-[56px] items-center">
             <div className="w-[14px] h-[14px] rounded-full bg-[#3563E9] border-[#AEC8FC] border-[2px]"></div>
-            <p className="text-[16px] font-semibold">Drop - Off</p>
+            <p className="text-[16px] text-[#1A202C] font-semibold">Drop - Off</p>
           </div>
-          <div className="flex flex-wrap gap-4 lg:gap-12 pb-4 pl-4 lg:pl-12">
-          <div className=''>
-        
-        <p className='font-bold text-[16px]'>Location</p>
-        <div className='flex justify-between items-center gap-12'>
-        <div className='flex'>
-          <p className='text-[#90A3BF]  lg:mt-0 text-[12px] mt-2'>Select Your City</p>
-          <select name="Select Your City" className='bg-white' id=""></select>
-        </div>
-        <div className='flex'>
-          <p className='text-[#90A3BF]  lg:mt-0 text-[12px] mt-2'>Select Your City</p>
-          <select name="Select Your City" className='bg-white' id=""></select>
-        </div>
-        <div className='flex'>
-          <p className='text-[#90A3BF]  lg:mt-0 text-[12px] mt-2'>Select Your City</p>
-          <select name="Select Your City" className='bg-white' id=""></select>
-        </div>
-        </div>
-        </div>
-        
+          <div className="flex flex-wrap gap-4 lg:gap-12 pb-4 pl-2 lg:pl-12">
+            <div>
+              <p className="font-bold text-[#1A202C] text-[16px]">Location</p>
+              <div className="flex justify-between items-center gap-6 lg:gap-16">
+                <div className="flex">
+                  <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px] text-[10px] mt-2">Select Your Country</p>
+                  <select name="Select Your Country" className="bg-[#FFFFFF] text-[12px]">
+                    <option value="">Pakistan</option>
+                    <option value="">Iran</option>
+                  </select>
+                </div>
+                <div className="flex">
+                  <p className="text-[#90A3BF] lg:text-[12px] lg:mt-0 text-[10px] mt-2">Select Your City</p>
+                  <select name="Select Your City" className="bg-[#FFFFFF] pl-2 text-[12px]">
+                    <option value="">Karachi</option>
+                    <option value="">Islamabad</option>
+                  </select>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

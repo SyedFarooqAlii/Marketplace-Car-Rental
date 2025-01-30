@@ -78,22 +78,22 @@ const Reviews = () => {
 
   return (
     <div className="lg:mt-16 mt-12 px-2 lg:px-4">
-      <div className="relative max-w-[100%] lg:max-w-[1250px] mx-auto bg-gray-100 lg:p-8 p-3 rounded-lg">
+      <div className="relative max-w-[100%] lg:max-w-[1250px] mx-auto bg-[#F6F7F9] lg:p-8 p-3 rounded-lg">
         {/* Title */}
         <div className="flex  mb-4 lg:flex-row flex-col justify-between ">
-        <h2 className="lg:text-4xl text-3xl font-[800] text-gray-900 mb-8"><span className="text-blue-500">Client</span> Reviews!</h2>
+        <h2 className="lg:text-4xl text-3xl font-[800] text-[#1A202C] mb-8"><span className="text-[#3563E9]">Client</span> Reviews!</h2>
 
         {/* Arrows */}
         <div className=" flex lg:space-x-4 space-x-2 ">
           <button
             onClick={handlePrev}
-            className="bg-blue-600 w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center text-white rounded-full shadow-lg hover:bg-blue-700 focus:outline-none"
+            className="bg-[#3563E9] w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center text-white rounded-full shadow-lg hover:bg-blue-700 focus:outline-none"
           >
             &#8592;
           </button>
           <button
             onClick={handleNext}
-            className="bg-blue-600 w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center text-white rounded-full shadow-lg hover:bg-blue-700 focus:outline-none"
+            className="bg-[#3563E9] w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center text-white rounded-full shadow-lg hover:bg-blue-700 focus:outline-none"
           >
             &#8594;
           </button>
@@ -117,7 +117,7 @@ const Reviews = () => {
                   scale: 1.05,
                   transition: { duration: 0.3 },
                 }}
-                className="bg-white mb-4 shadow-lg rounded-lg lg:px-6 px-3 py-8 lg:mx-4 flex-shrink-0 w-full sm:w-[calc(100%)] lg:w-[calc(92%/3)] h-[350px] flex flex-col justify-between"
+                className="bg-[#ffffff] mb-4 shadow-lg rounded-lg lg:px-6 px-3 py-8 lg:mx-4 flex-shrink-0 w-full sm:w-[calc(100%)] lg:w-[calc(92%/3)] h-[350px] flex flex-col justify-between"
               >
                 <div className="flex items-center mb-4">
                   <img
@@ -126,8 +126,8 @@ const Reviews = () => {
                     className="w-16 h-16 rounded-full mr-4"
                   />
                   <div>
-                    <h3 className="text-sm font-bold text-gray-800">{review.name}</h3>
-                    <p className="text-xs text-gray-500">{review.position}</p>
+                    <h3 className="text-sm font-bold text-[#1A202C]">{review.name}</h3>
+                    <p className="text-xs text-[#90A3BF]">{review.position}</p>
                   </div>
                 </div>
                 <p className="text-sm text-gray-700 flex-grow mb-4">{review.review}</p>

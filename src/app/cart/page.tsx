@@ -47,11 +47,11 @@ export default function CartPage() {
   }, 0);
 
   return (
-    <div>
+    <div className="bg-[#f6f7f9]">
     
     <div className="container mx-auto px-6 py-8 animate-top">
-      <h1 className="text-4xl font-extrabold mb-8 text-center">
-        Your <span className="text-blue-500">Cart!</span>
+      <h1 className="text-4xl text-[#1A202C] font-extrabold mb-8 text-center">
+        Your <span className="text-[#3563E9]">Cart!</span>
       </h1>
       {cart.length === 0 ? (
         <p className="text-center text-xl">Your cart is empty.</p>
@@ -60,7 +60,7 @@ export default function CartPage() {
           {cart.map((item, index) => (
             <div
               key={item._id}
-              className={`flex flex-col sm:flex-row justify-between items-center p-4 bg-white rounded-lg shadow-lg cart-item animate-slide}
+              className={`flex flex-col sm:flex-row justify-between items-center p-4 bg-[#ffffff] rounded-lg shadow-lg cart-item animate-slide}
               style={{
                 animationDelay: ${index * 0.2}s,
               }`}
@@ -78,24 +78,24 @@ export default function CartPage() {
 
               {/* Car Description */}
               <div className="flex-1 sm:ml-4 text-center sm:text-left">
-                <h2 className="text-lg font-bold text-gray-800">{item.name}</h2>
-                <p className="text-sm text-gray-600">{item.type} | {item.brand}</p>
-                <div className="text-sm mt-2 text-gray-500">
-                  <p className="text-blue-500">
-                    Fuel Capacity: <span className="text-gray-500">{item.fuelCapacity}</span>
+                <h2 className="text-lg font-bold text-[#1A202C]">{item.name}</h2>
+                <p className="text-sm text-[#596780]">{item.type} | {item.brand}</p>
+                <div className="text-sm mt-2 text-[#90A3BF]">
+                  <p className="text-[#3563E9]">
+                    Fuel Capacity: <span className="text-[#90A3BF]">{item.fuelCapacity}</span>
                   </p>
-                  <p className="text-blue-500">
-                    Transmission: <span className="text-gray-500">{item.transmission}</span>
+                  <p className="text-[#3563E9]">
+                    Transmission: <span className="text-[#90A3BF]">{item.transmission}</span>
                   </p>
-                  <p className="text-blue-500">
-                    Seating Capacity: <span className="text-gray-500">{item.seatingCapacity}</span>
+                  <p className="text-[#3563E9]">
+                    Seating Capacity: <span className="text-[#90A3BF]">{item.seatingCapacity}</span>
                   </p>
                 </div>
               </div>
 
               {/* Car Price */}
               <div className="text-center sm:text-right">
-                <div className="text-lg mt-2 font-bold text-gray-800 mb-4">
+                <div className="text-lg mt-2 font-bold text-[#1A202C] mb-4">
                   {item.pricePerDay}
                 </div>
                 <button
@@ -109,8 +109,8 @@ export default function CartPage() {
           ))}
 
           {/* Total Price Section */}
-          <div className="flex justify-between px-4 items-center py-4 bg-gray-100 rounded-lg shadow-md animate-bottom">
-            <div className="text-lg font-bold">Total Price</div>
+          <div className="flex justify-between px-4 items-center py-4 bg-[#ffffff] rounded-lg shadow-md animate-bottom">
+            <div className="text-lg text-[#1A202C] font-bold">Total Price</div>
             <div className="text-xl font-bold text-green-500">${totalPrice.toFixed(2)}</div>
           </div>
 

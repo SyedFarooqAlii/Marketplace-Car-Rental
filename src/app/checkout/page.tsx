@@ -90,19 +90,19 @@ const CheckoutPage = () => {
   };
 
   return (
-    <div className=" overflow-hidden">
+    <div className="bg-[#f6f7f9] overflow-hidden">
       
 
-      <div className="container text-gray-900 mx-auto px-6 py-8">
+      <div className="container text-[#1A202C] mx-auto px-6 py-8">
         <h1 className="text-4xl font-[800] mb-8 text-center animate-heading">
-          <span className="text-blue-500">Check</span>out!
+          <span className="text-[#3563E9]">Check</span>out!
         </h1>
 
         <div className="grid  grid-cols-1 lg:grid-cols-3 lg:gap-8">
           {/* Shipment Details */}
-          <div className="col-span-2 bg-gray-100 lg:p-6 p-3 rounded-lg shadow-lg animate-slide-right">
-            <h2 className="lg:text-3xl text-[26px] font-[800] mb-4 animate-heading">
-              <span className="text-blue-500">Shipment</span> Details
+          <div className="col-span-2 bg-[#ffffff] lg:p-6 p-3 rounded-lg shadow-lg animate-slide-right">
+            <h2 className="lg:text-3xl text-[#1A202C] text-[26px] font-[800] mb-4 animate-heading">
+              <span className="text-[#3563E9]">Shipment</span> Details
             </h2>
             <form className="flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-6">
   {/* First Name and Last Name */}
@@ -183,7 +183,7 @@ const CheckoutPage = () => {
   </div>
 </form>
             <div className="mt-6">
-              <label className="block text-sm font-medium mb-2">Pickup Date and Time</label>
+              <label className="block text-sm text-[#596780] font-medium mb-2">Pickup Date and Time</label>
               <input
                 type="datetime-local"
                 value={pickupDate}
@@ -193,7 +193,7 @@ const CheckoutPage = () => {
               />
             </div>
             <div className="mt-4">
-              <label className="block text-sm font-medium mb-2">Drop-off Date and Time</label>
+              <label className="block text-sm text-[#596780] font-medium mb-2">Drop-off Date and Time</label>
               <input
                 type="datetime-local"
                 value={dropoffDate}
@@ -205,9 +205,9 @@ const CheckoutPage = () => {
           </div>
 
           {/* Order Summary */}
-          <div className="bg-gray-100 lg:p-6 p-3 lg:mt-0 mt-16 rounded-lg shadow-lg animate-slide-left">
-            <h2 className="text-2xl font-[800] mb-4 animate-heading">
-              <span className="text-blue-500">Order</span> Summary
+          <div className="bg-[#ffffff] lg:p-6 p-3 lg:mt-0 mt-16 rounded-lg shadow-lg animate-slide-left">
+            <h2 className="text-2xl text-[#1A202C] font-[800] mb-4 animate-heading">
+              <span className="text-[#3563E9]">Order</span> Summary
             </h2>
             <ul className="space-y-4">
               {cartItems.map((item) => (
@@ -221,9 +221,9 @@ const CheckoutPage = () => {
                       className="rounded-lg object-cover"
                     />
                     <div>
-                      <h3 className="font-semibold">{item.name}</h3>
-                      <p className="text-sm text-gray-600">{item.brand}</p>
-                      <p className="font-medium">
+                      <h3 className="font-semibold text-[#1A202C]">{item.name}</h3>
+                      <p className="text-sm text-[#596780]">{item.brand}</p>
+                      <p className="font-medium text-[#596780]">
                         ${parsePrice(item.pricePerDay).toFixed(2)} x {days} days
                       </p>
                     </div>
@@ -234,22 +234,22 @@ const CheckoutPage = () => {
 
             <div className="mt-4 border-t pt-4 space-y-2">
               <div className="flex justify-between">
-                <span>Sub-total</span>
-                <span>${subTotal.toFixed(2)}</span>
+                <span className="text-[#1A202C]">Sub-total</span>
+                <span className="text-[#596780]">${subTotal.toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
-                <span>Discount</span>
-                <span>${discount.toFixed(2)}</span>
+                <span className="text-[#1A202C]">Discount</span>
+                <span className="text-[#596780]">${discount.toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
-                <span>Tax</span>
-                <span>${tax.toFixed(2)}</span>
+                <span className="text-[#1A202C]">Tax</span>
+                <span className="text-[#596780]">${tax.toFixed(2)}</span>
               </div>
             </div>
 
             <div className="flex justify-between mt-4 font-bold text-lg">
-              <span>Total</span>
-              <span>${total.toFixed(2)}</span>
+              <span className="text-[#1A202C]">Total</span>
+              <span className="text-[#596780]">${total.toFixed(2)}</span>
             </div>
 
             <button

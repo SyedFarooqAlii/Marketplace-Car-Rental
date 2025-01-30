@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className=' bg-white'>
+    <div className=' bg-[#FFFFFF]'>
    <div className="flex flex-col lg:flex-row mt-36 mx-6 justify-between">
     <div className="w-full lg:w-[292px] h-auto lg:h-[108px] space-y-[16px] mb-6 lg:mb-0">
       <h1 className="text-[32px]  font-bold text-[#3563E9]">MORENT</h1>

@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import { ClerkProvider, SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,20 +29,34 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    rel="stylesheet"
-  />
-</head>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          rel="stylesheet"
+        />
+      </head>
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-<Navbar/>
-        {children}
-        <Footer/>
+        <ClerkProvider>
+          {/* Navbar */}
+          <Navbar />
+
+          {/* SignIn / SignOut Button (Optional) */}
+          {/* <SignedOut>
+            <SignInButton />
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn> */}
+
+          {/* Main Content */}
+          {children}
+
+          {/* Footer */}
+          <Footer />
+        </ClerkProvider>
       </body>
-      
     </html>
   );
 }

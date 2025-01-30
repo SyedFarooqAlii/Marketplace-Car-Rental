@@ -39,7 +39,7 @@ export default function CarDetailsClient({ car }: { car: CarItem }) {
   return (
     <div>
       <div className="relative">
-        <div className="bg-blue-500 w-full h-[200px]"></div>
+        <div className="bg-[#3563E9] w-full h-[200px]"></div>
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4 text-center">
           <h1 className="text-2xl md:text-4xl font-extrabold mb-2">
@@ -51,7 +51,7 @@ export default function CarDetailsClient({ car }: { car: CarItem }) {
         </div>
       </div>
 
-      <div className="container bg-gray-100 mx-auto px-4 py-6">
+      <div className="container bg-[#F6F7F9] mx-auto px-4 py-6">
         <div className="flex flex-col lg:flex-row gap-4">
          
 
@@ -88,24 +88,24 @@ export default function CarDetailsClient({ car }: { car: CarItem }) {
                 {car.available ? "In Stock" : "Out of Stock"}
               </span>
             </div>
-            <h1 className="text-3xl font-bold mb-4">{car.name}</h1>
-            <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+            <h1 className="text-3xl text-[#1A202C] font-bold mb-4">{car.name}</h1>
+            <p className="text-[#596780] text-lg mb-6 leading-relaxed">
               {car.description}
             </p>
             <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">Reviews:</h3>
+              <h3 className="text-lg text-[#1A202C] font-semibold mb-2">Reviews:</h3>
               <div className="flex items-center space-x-2">
                 <div className="flex space-x-1 text-blue-500">
                   {[...Array(5)].map((_, i) => (
                     <i key={i} className="fas fa-star"></i>
                   ))}
                 </div>
-                <p className="text-gray-600">
+                <p className="text-[#596780]">
                   <span className="font-semibold">5.0</span> | 22 reviews
                 </p>
               </div>
             </div>
-            <div className="text-2xl font-bold text-gray-900 mb-4">
+            <div className="text-2xl font-bold text-[#1A202C] mb-4">
               {car.pricePerDay}
               {car.originalPrice && (
                 <span className="text-lg text-red-500 line-through ml-2">
@@ -113,8 +113,8 @@ export default function CarDetailsClient({ car }: { car: CarItem }) {
                 </span>
               )}
             </div>
-            <div className="text-sm text-gray-500 mb-4">
-              Category: <span className="font-medium">{car.type}</span>
+            <div className="text-sm text-[#1A202C] mb-4">
+              Category: <span className="font-medium text-[#596780]">{car.type}</span>
             </div>
             <div className="flex items-center space-x-4 mb-6">
               <button
@@ -126,7 +126,7 @@ export default function CarDetailsClient({ car }: { car: CarItem }) {
             </div>
 
             <div className="mb-6">
-              <p className="text-sm font-medium text-gray-500 mb-2">Share:</p>
+              <p className="text-sm font-medium text-[#596780] mb-2">Share:</p>
               <div className="flex space-x-4">
                 <button className="text-blue-700">
                   <i className="fab fa-facebook-square text-2xl"></i>

@@ -118,17 +118,17 @@ export default function CarPagetwo() {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto px-4 py-12 text-white">
+    <div className="max-w-screen-xl bg-[#F6F7F9] dark:bg-[#F6F7F9] mx-auto px-4 py-12 text-white">
      <div className="flex flex-col space-y-2 lg:space-y-0 lg:flex-row lg:mb-12 mb-6 lg:px-4 lg:items-center justify-between">
-      <h1 className="lg:text-4xl text-[24px] font-[700]   tracking-wide text-gray-900">
-        <span className="text-blue-500" >Explore Our Exclusive</span> Car Collection
+      <h1 className="lg:text-4xl text-[24px] font-[700]   tracking-wide text-[#1A202C]">
+        <span className="text-[#3563E9]" >Explore Our Exclusive</span> Car Collection
       </h1>
        {/* Arrow buttons */}
        <div className="flex gap-4 animation-slide-right">
           <div className="flex items-center justify-center text-white">
             <button
               onClick={() => handleArrowClick("left")}
-              className="bg-blue-600 px-3 py-2 rounded-full transition-transform transform hover:scale-110"
+              className="bg-[#3563E9] px-3 py-2 rounded-full transition-transform transform hover:scale-110"
             >
               ←
             </button>
@@ -136,7 +136,7 @@ export default function CarPagetwo() {
           <div className="flex items-center justify-center text-white">
             <button
               onClick={() => handleArrowClick("right")}
-              className="bg-blue-600 px-3 py-2 rounded-full transition-transform transform hover:scale-110"
+              className="bg-[#3563E9] px-3 py-2 rounded-full transition-transform transform hover:scale-110"
             >
               →
             </button>
@@ -145,7 +145,7 @@ export default function CarPagetwo() {
 </div>
       <div className="flex lg:flex-row space-y-8 lg:space-y-0 flex-col ">
       {/* Left Sidebar: Type Filter */}
-<div className="w-full lg:w-[360px] bg-white rounded lg:pl-4 space-y-4 tracking-[-2%]">
+<div className="w-full lg:w-[360px] bg-[#FFFFFF] rounded lg:pl-4 space-y-4 tracking-[-2%]">
   {/* Search Bar */}
   <div className="relative mb-4">
     <input
@@ -153,11 +153,11 @@ export default function CarPagetwo() {
       value={searchQuery}
       onChange={handleSearch}
       placeholder="Search cars by name..."
-      className="w-full px-4 py-2 text-black border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+      className="w-full px-4 py-2 text-[#1A202C] border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
     />
     <button
       onClick={handleSearchSubmit}
-      className="absolute right-0 top-1/2 transform -translate-y-1/2 px-3 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+      className="absolute right-0 top-1/2 transform -translate-y-1/2 px-3 py-2 bg-[#3563E9] text-white rounded-lg hover:bg-blue-600 transition"
     >
       Search
     </button>
@@ -179,7 +179,7 @@ export default function CarPagetwo() {
 
   {/* Filters Button (Visible on Small Screens Only) */}
   <button
-    className="lg:hidden w-full px-4 py-2 text-white bg-blue-500 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 hover:bg-blue-600 transition"
+    className="lg:hidden w-full px-4 py-2 text-white bg-[#3563E9] rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 hover:bg-blue-600 transition"
     onClick={() => setFiltersOpen(!isFiltersOpen)}
   >
     {isFiltersOpen ? "Hide Filters" : "Show Filters"}
@@ -192,7 +192,7 @@ export default function CarPagetwo() {
     } lg:block`}
   >
     {/* Type Filter */}
-    <p className="text-[16px] font-[600] text-[#90A3BF] tracking-wider">T Y P E</p>
+    <p className="text-[12px] font-[600] text-[#90A3BF] tracking-wide">T Y P E</p>
     <div
       className={`flex items-center gap-4 cursor-pointer ${
         activeType === null ? "bg-gray-200 rounded-lg" : ""
@@ -241,7 +241,7 @@ export default function CarPagetwo() {
           {activeType === type && <i className="fa-solid fa-check"></i>}
         </div>
         <div className="flex">
-          <p className="text-[16px] font-[600] text-[#596780]">
+          <p className="text-[20px] font-[600] text-[#596780]">
             {type} <span className="text-[#90A3BF]">(3)</span>
           </p>
         </div>
@@ -249,7 +249,7 @@ export default function CarPagetwo() {
     ))}
 
     {/* Transmission Filter */}
-    <p className="text-[16px] uppercase font-[600] text-[#90A3BF] tracking-wider">Transmission</p>
+    <p className="text-[12px] uppercase font-[600] text-[#90A3BF] tracking-wide">Transmission</p>
     {["Automatic", "Manual"].map((transmissionType) => (
       <div
         key={transmissionType}
@@ -268,7 +268,7 @@ export default function CarPagetwo() {
           {transmission === transmissionType && <i className="fa-solid fa-check"></i>}
         </div>
         <div className="flex">
-          <p className="text-[16px] font-[600] text-[#596780]">
+          <p className="text-[20px] font-[600] text-[#596780]">
             {transmissionType} <span className="text-[#90A3BF]">(3)</span>
           </p>
         </div>
@@ -276,7 +276,7 @@ export default function CarPagetwo() {
     ))}
 
     {/* Price Range Slider */}
-    <p className="text-[12px] font-[600] uppercase text-[#90A3BF] tracking-wider mt-4">Price Range</p>
+    <p className="text-[12px] font-[600] uppercase text-[#90A3BF] tracking-wider mt-4">Price</p>
     <div>
       <input
         type="range"
@@ -298,8 +298,8 @@ export default function CarPagetwo() {
         onChange={handlePriceRangeChange}
         className="w-full"
       />
-      <p className="text-black">
-        <span className="text-blue-500">Price Range:</span> ${priceRange[0]} - ${priceRange[1]}
+      <p className="text-[#596780]">
+        <span className="text-[#596780]">Max.</span> ${priceRange[0]} - ${priceRange[1]}
       </p>
     </div>
   </div>
@@ -320,7 +320,7 @@ export default function CarPagetwo() {
               key={`${item._id}-${currentIndex}`} // Ensure animation triggers for each change
               className={`
                  sm:w-[280px] md:w-[304px] lg:w-[285px] max-w-xs  lg:h-[370px]
-flex flex-col w-[300px] rounded-[10px] pb-4 overflow-hidden border border-gray-100 bg-white shadow-md ${animationClass} transition-all duration-500 ease-in-out`}
+flex flex-col w-[300px] rounded-[10px] pb-4 overflow-hidden border border-gray-100 bg-[#ffffff] shadow-md ${animationClass} transition-all duration-500 ease-in-out`}
             >
               {/* Header */}
               <div className="h-[48px] w-full flex items-center justify-center">
@@ -329,7 +329,7 @@ flex flex-col w-[300px] rounded-[10px] pb-4 overflow-hidden border border-gray-1
                     <p className="lg:text-[16px] text-[16px] md:text-[16px] font-[700] text-[#1A202C]">
                       {item.name}
                     </p>
-                    <p className="lg:text-[10px] text-[14px] md:text-[14px] font-[700] text-[#90A3BF] tracking-[-.2%]">
+                    <p className="lg:text-[14px] text-[14px] md:text-[14px] font-[700] text-[#90A3BF] tracking-[-.2%]">
                       {item.type}
                     </p>
                   </div>
@@ -362,7 +362,7 @@ flex flex-col w-[300px] rounded-[10px] pb-4 overflow-hidden border border-gray-1
                 <div className="flex  justify-between w-[256px] h-[24px]">
                   <div className="flex items-center gap-2">
                     <i className="fa-solid fa-gas-pump text-[14px] sm:text-[16px] text-[#90A3BF]"></i>
-                    <p className="lg:text-[12px] text-[#90A3BF]  text-[14px]">{item.fuelCapacity}</p>
+                    <p className="lg:text-[14px] text-[#90A3BF]  text-[14px]">{item.fuelCapacity}</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <img
@@ -370,7 +370,7 @@ flex flex-col w-[300px] rounded-[10px] pb-4 overflow-hidden border border-gray-1
                       src="/wheel.jpg"
                       alt=""
                     />
-                    <p className="lg:text-[12px] text-[#90A3BF] text-[14px]">{item.transmission}</p>
+                    <p className="lg:text-[14px] text-[#90A3BF] text-[14px]">{item.transmission}</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <img
@@ -378,7 +378,7 @@ flex flex-col w-[300px] rounded-[10px] pb-4 overflow-hidden border border-gray-1
                       src="/profile.jpg"
                       alt=""
                     />
-                    <p className="lg:text-[12px] text-[#90A3BF] text-[14px]">{item.seatingCapacity}</p>
+                    <p className="lg:text-[14px] text-[#90A3BF] text-[14px]">{item.seatingCapacity}</p>
                   </div>
                 </div>
               </div>
@@ -389,7 +389,7 @@ flex flex-col w-[300px] rounded-[10px] pb-4 overflow-hidden border border-gray-1
                     <h5 className="lg:text-[16px] text-[16px] md:text-[18px] font-[700] text-gray-900">
                       {item.pricePerDay}
                     </h5>
-                    <p className="lg:text-[10px] text-[12px] md:text-[14px] font-[700] text-[#90A3BF]">
+                    <p className="lg:text-[14px] text-[12px] md:text-[14px] font-[700] text-[#90A3BF]">
                       {item.originalPrice}
                     </p>
                   </a>

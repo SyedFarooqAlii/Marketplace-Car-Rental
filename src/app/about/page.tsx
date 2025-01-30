@@ -20,7 +20,7 @@ const About = () => {
             <h2 className="lg:text-2xl text-[20px] font-[700] text-blue-500">
               Your Trusted Car Rental Partner
             </h2>
-            <p className="text-lg [#90A3BF] leading-relaxed">
+            <p className="text-lg text-[#1A202C] leading-relaxed">
               Welcome to our car rental service, where we redefine your travel
               experience with comfort, convenience, and style. Whether you're
               planning a business trip, a family vacation, or just a weekend

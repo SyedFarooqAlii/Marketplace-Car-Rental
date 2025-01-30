@@ -17,7 +17,7 @@ import ThirdPage from "./Components/ThirdPage/page";
 
 export default function Home() {
   return (
-    <div className="bg-gray-100 overflow-hidden">
+    <div className="bg-[#f6f7f9] dark:bg-[#f6f7f9] overflow-hidden">
 
 
 <Homepage/>

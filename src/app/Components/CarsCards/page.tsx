@@ -27,7 +27,7 @@ const Cards = () => {
   }, []);
   // 
   return (
-    <div className=" bg-black dark:bg-[#F6F7F9]">
+    <div className=" bg-[#f6f7f9] dark:bg-[#F6F7F9]">
       <div className="flex w-full flex-col lg:flex-row items-center justify-center gap-6 mt-12 animate-on-scroll">
         {/* First Section */}
         <div className="h-[360px] rounded-[10px] relative bg-[#54A6FF] w-[100%] lg:w-[600px]">
@@ -101,15 +101,15 @@ const Cards = () => {
               <div className="flex">
                   <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px] text-[10px] mt-2">Select Your Country</p>
                   <select name="Select Your Country" className="bg-[#FFFFFF] text-[12px]">
-                    <option value="">Pakistan</option>
-                    <option value="">Iran</option>
+                    <option className="[text-[#596780]"  value="">Pakistan</option>
+                    <option className="[text-[#596780]"  value="">Iran</option>
                   </select>
                 </div>
                 <div className="flex">
                   <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px] text-[10px] mt-2">Select Your City</p>
                   <select name="Select Your City" className="bg-[#FFFFFF] text-[12px]">
-                    <option value="">Lahore</option>
-                    <option value="">Karachi</option>
+                    <option className="[text-[#596780]"  value="">Lahore</option>
+                    <option className="[text-[#596780]"  value="">Karachi</option>
                   </select>
                 </div>
               </div>
@@ -130,36 +130,39 @@ const Cards = () => {
         </div>
 
         {/* Drop-Off Section */}
+        {/* Pick-Up Section */}
         <div
-          className={`w-full lg:w-auto bg-[#FFFFFF] rounded-[10px] ${divsSwapped ? "order-1" : ""}`}
+          className={`w-full lg:w-auto bg-[#FFFFFF] rounded-[10px] ${divsSwapped ? "order-2" : ""}`}
         >
-          <div className="flex gap-4 pl-2 lg:pl-12 w-full lg:w-[522px] h-[56px] items-center">
+          <div className="flex gap-4 pl-4 lg:pl-12 w-full lg:w-[522px] h-[56px] items-center">
             <div className="w-[14px] h-[14px] rounded-full bg-[#3563E9] border-[#AEC8FC] border-[2px]"></div>
             <p className="text-[16px] text-[#1A202C] font-semibold">Drop - Off</p>
           </div>
-          <div className="flex flex-wrap gap-4 lg:gap-12 pb-4 pl-2 lg:pl-12">
+          <div className="flex flex-wrap gap-4 lg:gap-12 pb-4 pl-4 lg:pl-12">
             <div>
               <p className="font-bold text-[#1A202C] text-[16px]">Location</p>
               <div className="flex justify-between items-center gap-6 lg:gap-16">
-                <div className="flex">
+              <div className="flex">
                   <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px] text-[10px] mt-2">Select Your Country</p>
                   <select name="Select Your Country" className="bg-[#FFFFFF] text-[12px]">
-                    <option value="">Pakistan</option>
-                    <option value="">Iran</option>
+                    <option className="[text-[#596780]" value="">Pakistan</option>
+                    <option className="[text-[#596780]" value="">Iran</option>
                   </select>
                 </div>
                 <div className="flex">
-                  <p className="text-[#90A3BF] lg:text-[12px] lg:mt-0 text-[10px] mt-2">Select Your City</p>
-                  <select name="Select Your City" className="bg-[#FFFFFF] pl-2 text-[12px]">
-                    <option value="">Karachi</option>
-                    <option value="">Islamabad</option>
+                  <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px] text-[10px] mt-2">Select Your City</p>
+                  <select name="Select Your City" className="bg-[#FFFFFF] text-[12px]">
+                    <option className="[text-[#596780]"  value="">Lahore</option>
+                    <option className="[text-[#596780]"  value="">Karachi</option>
                   </select>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+          </div>
+          </div>
+        
+
     </div>
   );
 };

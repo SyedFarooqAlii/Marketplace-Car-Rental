@@ -3,14 +3,14 @@ import React from 'react'
 
 const FourthPage = () => {
   return (
-    <div className='flex lg:px-6 px-2 flex-col-reverse lg:flex-row    mt-12 justify-between'>
+    <div className='flex bg-[#f6f7f9] lg:px-6 px-2 flex-col-reverse lg:flex-row    mt-12 justify-between'>
   <script src="https://cdn.tailwindcss.com"></script>
 <div className='flex'>
 <div className="bg-gray-100 rounded-[10px] w-[100%] mt-4 lg:mt-0  ">
 <div className="w-full max-w-[782px] pt-8   lg:w-[856px] bg-white px-4 sm:px-6 lg:px-8 rounded-lg ">
   {/* <!-- Billing Info --> */}
   <div className="mb-6 font-sans">
-    <h2 className="text-lg font-[700] mb-4"><span className='text-blue-500'>Billing</span> Info</h2>
+    <h2 className="text-lg text-[#1A202C] font-[700] mb-4"><span className='text-blue-500'>Billing</span> Info</h2>
     <div className="flex flex-wrap justify-between">
       <p className="text-[#90A3BF] text-[14px] font-[500]">Please enter your billing info</p>
       <p className="text-[#90A3BF] text-[14px] font-[500]">Step 1 of 4</p>
@@ -61,7 +61,7 @@ const FourthPage = () => {
 
   {/* <!-- Rental Info --> */}
   <div className="mb-6 font-sans">
-    <h2 className="text-lg font-semibold mb-4">Rental Info</h2>
+    <h2 className="text-lg text-[#1A202C] font-semibold mb-4">Rental Info</h2>
     <div className="flex flex-wrap justify-between">
       <p className="text-[#90A3BF] text-[14px] font-[500]">Please enter your billing info</p>
       <p className="text-[#90A3BF] text-[14px] font-[500]">Step 1 of 4</p>
@@ -71,7 +71,7 @@ const FourthPage = () => {
 
   {/* <!-- Payment Method --> */}
   <div className="mb-6">
-    <h2 className="text-lg font-semibold text-[20px] mb-4">Payment Method</h2>
+    <h2 className="text-lg text-[#1A202C] font-semibold text-[20px] mb-4">Payment Method</h2>
     <div className="flex flex-wrap justify-between mb-4">
       <p className="text-[#90A3BF] text-[14px] font-[500]">Please enter your payment method</p>
       <p className="text-[#90A3BF] text-[14px] font-[500]">Step 3 of 4</p>
@@ -79,7 +79,7 @@ const FourthPage = () => {
     <div className="space-y-4">
       <div className="flex flex-wrap justify-between items-center">
         <label className="block">
-          <input type="radio" name="payment" className="mr-2" /> Credit Card
+          <input type="radio"  name="payment" className="mr-2 text-[#1A202C]" /> Credit Card
         </label>
         <Image className="w-[92px] h-[20px] object-cover" src="/visa.jpg" width={92} height={20} alt="Visa" />
       </div>
@@ -107,13 +107,13 @@ const FourthPage = () => {
       </div>
       <div className="flex flex-wrap justify-between items-center">
         <label className="block">
-          <input type="radio" name="payment" className="mr-2" /> PayPal
+          <input type="radio" name="payment" className="mr-2 text-[#1A202C]" /> PayPal
         </label>
         <Image className="w-[92px] h-[20px] object-cover" src="/paypal.jpg" width={92} height={20} alt="PayPal" />
       </div>
       <div className="flex flex-wrap justify-between items-center">
         <label className="block">
-          <input type="radio" name="payment" className="mr-2" /> Bitcoin
+          <input type="radio" name="payment" className="mr-2 text-[#1A202C]" /> Bitcoin
         </label>
         <Image className="w-[92px] h-[20px] object-cover" src="/btc.jpg" width={92} height={20} alt="Bitcoin" />
       </div>
@@ -122,16 +122,16 @@ const FourthPage = () => {
 
   {/* <!-- Confirmation --> */}
   <div className="mb-6">
-    <h2 className="text-lg font-semibold mb-4">Confirmation</h2>
+    <h2 className="text-lg font-semibold text-[#1A202C] mb-4">Confirmation</h2>
     <div className="flex flex-wrap justify-between mb-4">
       <p className="text-[#90A3BF] text-[14px] font-[500]">Please enter your payment method</p>
       <p className="text-[#90A3BF] text-[14px] font-[500]">Step 4 of 4</p>
     </div>
     <label className="block mb-8 mt-4">
-      <input type="checkbox" className="mr-2" /> I agree to receive marketing emails.
+      <input type="checkbox" className="mr-2 text-[#1A202C]" /> I agree to receive marketing emails.
     </label>
     <label className="block mb-2">
-      <input type="checkbox" className="mr-2" /> I agree to terms and conditions.
+      <input type="checkbox" className="mr-2 text-[#1A202C]" /> I agree to terms and conditions.
     </label>
   </div>
 
@@ -144,7 +144,7 @@ const FourthPage = () => {
 
   <div className="mt-6">
     <Image className="h-[32px] w-[32px] object-cover" src="/protect.jpg" width={92} height={20} alt="" />
-    <h2 className="text-lg font-semibold mt-4 mb-4">Confirmation</h2>
+    <h2 className="text-lg font-semibold text-[#1A202C] mt-4 mb-4">Confirmation</h2>
     <div className="flex flex-wrap justify-between mb-4">
       <p className="text-[#90A3BF] text-[14px] font-[500]">Please enter your payment method</p>
     </div>

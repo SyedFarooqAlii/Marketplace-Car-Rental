@@ -78,7 +78,7 @@ const FourthPage = () => {
     </div>
     <div className="space-y-4">
       <div className="flex flex-wrap justify-between items-center">
-        <label className="block">
+        <label className="block text-[#1A202C]">
           <input type="radio"  name="payment" className="mr-2 text-[#1A202C]" /> Credit Card
         </label>
         <Image className="w-[92px] h-[20px] object-cover" src="/visa.jpg" width={92} height={20} alt="Visa" />
@@ -106,13 +106,13 @@ const FourthPage = () => {
         />
       </div>
       <div className="flex flex-wrap justify-between items-center">
-        <label className="block">
+        <label className="block text-[#1A202C]">
           <input type="radio" name="payment" className="mr-2 text-[#1A202C]" /> PayPal
         </label>
         <Image className="w-[92px] h-[20px] object-cover" src="/paypal.jpg" width={92} height={20} alt="PayPal" />
       </div>
       <div className="flex flex-wrap justify-between items-center">
-        <label className="block">
+        <label className="block text-[#1A202C]">
           <input type="radio" name="payment" className="mr-2 text-[#1A202C]" /> Bitcoin
         </label>
         <Image className="w-[92px] h-[20px] object-cover" src="/btc.jpg" width={92} height={20} alt="Bitcoin" />
@@ -127,10 +127,10 @@ const FourthPage = () => {
       <p className="text-[#90A3BF] text-[14px] font-[500]">Please enter your payment method</p>
       <p className="text-[#90A3BF] text-[14px] font-[500]">Step 4 of 4</p>
     </div>
-    <label className="block mb-8 mt-4">
+    <label className="block mb-8 mt-4 text-[#1A202C]">
       <input type="checkbox" className="mr-2 text-[#1A202C]" /> I agree to receive marketing emails.
     </label>
-    <label className="block mb-2">
+    <label className="block mb-2 text-[#1A202C]">
       <input type="checkbox" className="mr-2 text-[#1A202C]" /> I agree to terms and conditions.
     </label>
   </div>

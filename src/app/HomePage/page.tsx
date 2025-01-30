@@ -12,7 +12,7 @@ const Homepage = () => {
   return (
     <div>
       
-<div className='lg:p-4 p-2 bg-[#F6F7F9]'>
+<div className='lg:p-4  p-2 bg-[#F6F7F9] dark:bg-[#f6f7f9]'>
     <Searchbar width={'w-full md:hidden'}/>
 <Cards/>
 {/* <SecondPage/> */}

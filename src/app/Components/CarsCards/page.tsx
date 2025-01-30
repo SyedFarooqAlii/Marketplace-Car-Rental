@@ -99,17 +99,17 @@ const Cards = () => {
               <p className="font-bold text-[#1A202C] text-[16px]">Location</p>
               <div className="flex justify-between items-center gap-6 lg:gap-16">
               <div className="flex">
-                  <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px] text-[10px] mt-2">Select Your Country</p>
-                  <select name="Select Your Country" className="bg-[#FFFFFF] text-[12px]">
-                    <option className="[text-[#596780]"  value="">Pakistan</option>
-                    <option className="[text-[#596780]"  value="">Iran</option>
+                  <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px] text-[12px] mt-2">Select Your Country</p>
+                  <select name="Select Your Country" className="bg-[#FFFFFF] text-[#596780] text-[12px]">
+                    <option className="text-[#596780]"  value="">Pakistan</option>
+                    <option className="text-[#596780]"  value="">Iran</option>
                   </select>
                 </div>
                 <div className="flex">
-                  <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px] text-[10px] mt-2">Select Your City</p>
-                  <select name="Select Your City" className="bg-[#FFFFFF] text-[12px]">
-                    <option className="[text-[#596780]"  value="">Lahore</option>
-                    <option className="[text-[#596780]"  value="">Karachi</option>
+                  <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px] text-[12px] mt-2">Select Your City</p>
+                  <select name="Select Your City" className="bg-[#FFFFFF] text-[#596780] text-[12px]">
+                    <option className="text-[#596780]"  value="">Lahore</option>
+                    <option className="text-[#596780]"  value="">Karachi</option>
                   </select>
                 </div>
               </div>
@@ -143,17 +143,17 @@ const Cards = () => {
               <p className="font-bold text-[#1A202C] text-[16px]">Location</p>
               <div className="flex justify-between items-center gap-6 lg:gap-16">
               <div className="flex">
-                  <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px] text-[10px] mt-2">Select Your Country</p>
-                  <select name="Select Your Country" className="bg-[#FFFFFF] text-[12px]">
-                    <option className="[text-[#596780]" value="">Pakistan</option>
-                    <option className="[text-[#596780]" value="">Iran</option>
+                  <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px]  text-[12px] mt-2">Select Your Country</p>
+                  <select name="Select Your Country" className="bg-[#FFFFFF] text-[#596780] text-[12px]">
+                    <option className="text-[#596780]" value="">Pakistan</option>
+                    <option className="text-[#596780]" value="">Iran</option>
                   </select>
                 </div>
                 <div className="flex">
-                  <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px] text-[10px] mt-2">Select Your City</p>
-                  <select name="Select Your City" className="bg-[#FFFFFF] text-[12px]">
-                    <option className="[text-[#596780]"  value="">Lahore</option>
-                    <option className="[text-[#596780]"  value="">Karachi</option>
+                  <p className="text-[#90A3BF] lg:mt-0 lg:text-[12px] text-[12px] mt-2">Select Your City</p>
+                  <select name="Select Your City" className="bg-[#FFFFFF] text-[#596780] text-[12px]">
+                    <option className="text-[#596780]"  value="">Lahore</option>
+                    <option className="text-[#596780]"  value="">Karachi</option>
                   </select>
                 </div>
               </div>

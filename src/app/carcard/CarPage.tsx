@@ -88,7 +88,7 @@ export default function CarPage() {
           <div className="flex items-center justify-center text-white">
             <button
               onClick={() => handleArrowClick("right")}
-              className="bg-[#F6F7F9] px-3 py-2 rounded-full transition-transform transform hover:scale-110"
+              className="bg-[#3563E9] px-3 py-2 rounded-full transition-transform transform hover:scale-110"
             >
               →
             </button>

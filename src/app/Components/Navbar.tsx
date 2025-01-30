@@ -13,7 +13,7 @@ const Navbar = () => {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
       />
-      <div className="flex items-center bg-[#d4e2f366] bg-opacity-40  justify-between p-5">
+      <div className="flex items-center bg-[#ffffff]  justify-between p-5">
         {/* Left Section (Morent Logo) */}
         <div className="flex items-center space-x-4">
           <h1 className="text-3xl text-[#3563E9] font-[800]">

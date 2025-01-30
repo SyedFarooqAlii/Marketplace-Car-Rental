@@ -26,7 +26,7 @@ const About = () => {
               planning a business trip, a family vacation, or just a weekend
               getaway, we have the perfect vehicle for you.
             </p>
-            <p className="text-lg text-[#90A3BF] leading-relaxed">
+            <p className="text-lg text-[#1A202C] leading-relaxed">
               With a diverse fleet of well-maintained cars, competitive pricing,
               and unparalleled customer service, we aim to make your journey
               smooth and hassle-free. Trust us to deliver excellence on every
